@@ -1,0 +1,40 @@
+{
+  "name": "@ekoneko/scroller",
+  "version": "1.0.0",
+  "description": "Another scroll emulator",
+  "scripts": {
+    "start": "parcel examples/index.html",
+    "build": "npm run build-es5 && npm run build-es6",
+    "build-es5": "tsc --outDir lib",
+    "build-es6": "tsc --module es6 --outDir module"
+  },
+  "main": "lib/index.js",
+  "module": "modules/index.js",
+  "files": [
+    "lib/*",
+    "modules/*",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "scroller"
+  ],
+  "author": "arzusyume@gmail.com",
+  "homepage": "https://github.com/ekoneko/scroller",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ekoneko/scroller.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/web": "^0.0.42",
+    "parcel": "^2.0.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "eventemitter3": "^4.0.7"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+}

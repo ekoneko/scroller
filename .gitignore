@@ -1,0 +1,8 @@
+node_modules
+module
+lib
+dist
+.cache
+.parcel-cache
+package-lock.json
+lerna-debug.log
