@@ -1,8 +1,8 @@
-import { Scroller as ScrollerCore, ScrollerOptions } from '@ekoneko/scroller';
-import React from 'react';
+import { Scroller as ScrollerCore, ScrollerOptions } from '@ekoneko/scroller'
+import React from 'react'
 
 export interface ScrollerProps {
-  children: (scroller?: ScrollerCore) => React.ReactElement
+  children: React.ReactElement | ((scroller?: ScrollerCore) => React.ReactElement)
   options?: ScrollerOptions
   className?: string
 }
@@ -18,7 +18,7 @@ export const Scroller: React.FC<ScrollerProps> = ({ children, options, className
 
   return (
     <div className={className} ref={scrollElementRef}>
-      {children(scrollerRef.current)}
+      {typeof children === 'function' ? children(scrollerRef.current) : children}
     </div>
   )
 }

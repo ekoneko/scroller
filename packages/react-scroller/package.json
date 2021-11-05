@@ -33,7 +33,7 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "@ekoneko/scroller": "workspace:^1.0.0"
+    "@ekoneko/scroller": "*"
   },
   "peerDependencies": {
     "react": ">=16"
