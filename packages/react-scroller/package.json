@@ -1,6 +1,6 @@
 {
   "name": "@ekoneko/react-scroller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "@ekoneko/scroller react provider",
   "scripts": {
     "start": "parcel examples/index.html",
@@ -33,7 +33,7 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "@ekoneko/scroller": "*"
+    "@ekoneko/scroller": "^1.0.1"
   },
   "peerDependencies": {
     "react": ">=16"
