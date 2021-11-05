@@ -6,7 +6,7 @@
     "start": "parcel examples/index.html",
     "build": "npm run build-es5 && npm run build-es6",
     "build-es5": "tsc --outDir lib",
-    "build-es6": "tsc --module es6 --outDir module"
+    "build-es6": "tsc --module es6 --outDir modules"
   },
   "main": "lib/index.js",
   "module": "modules/index.js",
