@@ -4,7 +4,7 @@
   "description": "Another scroll emulator",
   "scripts": {
     "start": "parcel examples/index.html",
-    "build": "npm run build-es5 && npm run build-es6",
+    "build": "rm -rf {lib,modules} && npm run build-es5 && npm run build-es6",
     "build-es5": "tsc --outDir lib",
     "build-es6": "tsc --module es6 --outDir modules"
   },
@@ -26,7 +26,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/web": "^0.0.42",
     "parcel": "^2.0.0",
     "typescript": "^4.4.4"
   },
